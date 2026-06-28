@@ -1,0 +1,383 @@
+/* EnglishSpellPad App Store 截图模板 - 共享样式 */
+/* iPad 12.9" 2048×2732 (3:4 竖屏) */
+
+:root {
+    /* 主色 */
+    --primary: #2563eb;
+    --primary-light: #3b82f6;
+    --primary-dark: #1e40af;
+    --accent: #f59e0b;
+    --success: #10b981;
+    --danger: #ef4444;
+    --purple: #8b5cf6;
+    --pink: #ec4899;
+
+    /* 中性 */
+    --text: #0f172a;
+    --text-secondary: #475569;
+    --bg: #fafaf9;
+    --card: #ffffff;
+    --border: #e2e8f0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* iPad 12.9" 截图容器 - 固定 2048×2732 */
+.screenshot {
+    width: 2048px;
+    height: 2732px;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg);
+    /* 安全区: 顶部 200px 状态栏, 底部 200px home indicator */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 顶部状态栏 mock (122px iPad status bar) */
+.status-bar {
+    height: 122px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--text);
+    flex-shrink: 0;
+}
+
+.status-bar.dark {
+    color: white;
+}
+
+.status-time { font-weight: 700; }
+
+.status-icons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+/* 顶部 header (app 名 + icon) */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 80px;
+    flex-shrink: 0;
+}
+
+.header .app-icon {
+    width: 180px;
+    height: 180px;
+    border-radius: 40px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: white;
+    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.4);
+}
+
+.header .app-name {
+    font-size: 56px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.header .app-tagline {
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+/* 底部 home indicator (iPad 横屏才显示, 12.9" 竖屏可选) */
+.home-indicator {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 12px;
+    background: var(--text);
+    border-radius: 6px;
+    opacity: 0.4;
+}
+
+.home-indicator.dark {
+    background: white;
+    opacity: 0.4;
+}
+
+/* Hero 标题 */
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 160px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 180px;
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -4px;
+    margin-bottom: 40px;
+}
+
+.hero-subtitle {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.4;
+    opacity: 0.9;
+    margin-bottom: 60px;
+}
+
+.hero-emoji {
+    font-size: 280px;
+    line-height: 1;
+    margin-bottom: 60px;
+}
+
+/* 卖点 tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    padding: 24px 48px;
+    border-radius: 60px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.tag.dark {
+    background: rgba(15, 23, 42, 0.05);
+    color: var(--text);
+    border-color: var(--border);
+}
+
+/* 内容区 (非 hero 截图用) */
+.content {
+    flex: 1;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 大标题 (非 hero) */
+.section-title {
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+}
+
+.section-subtitle {
+    font-size: 48px;
+    font-weight: 500;
+    opacity: 0.7;
+    margin-bottom: 80px;
+}
+
+/* 卡片网格 */
+.grid {
+    display: grid;
+    gap: 32px;
+}
+
+.grid-2 { grid-template-columns: 1fr 1fr; }
+.grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+.grid-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+.grid-6 { grid-template-columns: 1fr 1fr 1fr; }
+
+.feature-card {
+    background: var(--card);
+    border-radius: 32px;
+    padding: 56px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+    border: 2px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.feature-card .icon {
+    font-size: 96px;
+    line-height: 1;
+}
+
+.feature-card .title {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.feature-card .desc {
+    font-size: 30px;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+/* 渐变背景 */
+.bg-gradient-blue {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+}
+.bg-gradient-purple {
+    background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+    color: white;
+}
+.bg-gradient-orange {
+    background: linear-gradient(135deg, var(--accent) 0%, #ea580c 100%);
+    color: white;
+}
+.bg-gradient-green {
+    background: linear-gradient(135deg, var(--success) 0%, #047857 100%);
+    color: white;
+}
+.bg-gradient-pink {
+    background: linear-gradient(135deg, var(--pink) 0%, #be185d 100%);
+    color: white;
+}
+.bg-gradient-dark {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: white;
+}
+.bg-light {
+    background: #f8fafc;
+    color: var(--text);
+}
+.bg-white {
+    background: white;
+    color: var(--text);
+}
+
+/* 底部 CTA */
+.cta-bar {
+    padding: 60px 100px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.cta-url {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 1px;
+}
+
+.cta-url.dark {
+    color: var(--text-secondary);
+}
+
+/* 单词卡 (示例: cat / kæt / 猫) */
+.word-card {
+    background: white;
+    border-radius: 32px;
+    padding: 56px 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 3px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.word-card .word {
+    font-size: 96px;
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: -2px;
+}
+
+.word-card .ipa {
+    font-size: 36px;
+    color: var(--text-secondary);
+    font-family: "SF Mono", monospace;
+}
+
+.word-card .chinese {
+    font-size: 56px;
+    color: var(--text);
+    font-weight: 600;
+}
+
+/* 进度条 */
+.progress-bar {
+    height: 32px;
+    background: var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 16px 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light));
+    border-radius: 16px;
+    transition: width 0.3s;
+}
+
+/* 大数字 */
+.big-number {
+    font-size: 160px;
+    font-weight: 900;
+    letter-spacing: -4px;
+    line-height: 1;
+}
+
+/* Realm/境界卡 */
+.realm-card {
+    background: white;
+    border-radius: 32px;
+    padding: 60px 48px;
+    text-align: center;
+    border: 3px solid;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 400px;
+}
+
+.realm-emoji { font-size: 120px; line-height: 1; }
+.realm-name { font-size: 56px; font-weight: 800; }
+.realm-days { font-size: 32px; opacity: 0.7; }
+
+/* 链接 (仅样式) */
+.url-strip {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    opacity: 0.7;
+}

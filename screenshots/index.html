@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnglishSpellPad App Store 截图 — 总览</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        body { padding: 40px; }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 { font-size: 48px; margin-bottom: 24px; color: var(--text); }
+        .subtitle { font-size: 24px; color: var(--text-secondary); margin-bottom: 48px; }
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-bottom: 32px; }
+        .card {
+            background: white;
+            border: 3px solid var(--border);
+            border-radius: 24px;
+            padding: 32px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s;
+            display: block;
+        }
+        .card:hover { border-color: var(--primary); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.1); }
+        .card-num {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .card-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+        .card-desc {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+        .note {
+            background: rgba(37, 99, 235, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 24px;
+            border-radius: 8px;
+            margin: 24px 0;
+            font-size: 16px;
+            color: var(--text);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📸 EnglishSpellPad App Store 截图</h1>
+        <div class="subtitle">iPad 12.9" 2048 × 2732 · 6 张 · 中英双语版可改</div>
+
+        <div class="note">
+            <strong>📌 使用方法</strong>: 在 iPad Safari 打开每张截图 → 全屏模式 → 系统截图。<br>
+            <strong>⚙️ iPad 全屏</strong>: 分享按钮 → "添加到主屏幕" → 从主屏幕打开 (无 Safari UI 元素)。<br>
+            <strong>🔧 修改文案</strong>: 直接编辑 .html 文件, 改中文/数字/颜色即可, 无需重新 build App。
+        </div>
+
+        <div class="grid">
+            <a href="01-hero.html" class="card">
+                <span class="card-num">1 / 6</span>
+                <div class="card-title">🎯 主页 Hero</div>
+                <div class="card-desc">
+                    主标题 "修仙学单词, 每天 15 分钟"<br>
+                    4 个卖点 tags: 100% 离线 / 无追踪 / 无广告 / 强游戏化<br>
+                    <strong>用途</strong>: 搜索结果第一眼看到的截图
+                </div>
+            </a>
+            <a href="02-phonics-rules.html" class="card">
+                <span class="card-num">2 / 6</span>
+                <div class="card-title">📐 6 大拼读规律</div>
+                <div class="card-desc">
+                    6 张规则卡: 短元音 / Silent E / 元音组合 / 双元音 / R 控制 / 辅音组合<br>
+                    每个规则带 5-8 个例词<br>
+                    <strong>用途</strong>: 差异化卖点 (竞品没有)
+                </div>
+            </a>
+            <a href="03-modes.html" class="card">
+                <span class="card-num">3 / 6</span>
+                <div class="card-title">🎮 7 大学习模式</div>
+                <div class="card-desc">
+                    拼写 / 听音 / 默写 / 文章 / 拼读 / 复习 / 双向映射<br>
+                    一图展示全功能<br>
+                    <strong>用途</strong>: 展示功能丰富度
+                </div>
+            </a>
+            <a href="04-spelling-game.html" class="card">
+                <span class="card-num">4 / 6</span>
+                <div class="card-title">⌨️ 拼写游戏 UI</div>
+                <div class="card-desc">
+                    HUD + 当前单词卡 + 输入框 + 答对反馈<br>
+                    展示游戏化细节 (连击/分数/进度)<br>
+                    <strong>用途</strong>: 让用户感受交互体验
+                </div>
+            </a>
+            <a href="05-memory-match.html" class="card">
+                <span class="card-num">5 / 6</span>
+                <div class="card-title">🧩 双向映射游戏</div>
+                <div class="card-desc">
+                    4×4 卡片网格 + 状态条 + HUD<br>
+                    紫渐变背景, 突出新颖玩法<br>
+                    <strong>用途</strong>: 突出独家玩法
+                </div>
+            </a>
+            <a href="06-realms.html" class="card">
+                <span class="card-num">6 / 6</span>
+                <div class="card-title">🏔️ 修仙境界进度</div>
+                <div class="card-desc">
+                    5 境界 (练气/筑基/金丹/元婴/化神) + 当前金丹期<br>
+                    进度条 + 成就系统 + streak<br>
+                    <strong>用途</strong>: 长期累积感, 修仙题材差异化
+                </div>
+            </a>
+        </div>
+
+        <div class="note">
+            <strong>🎯 App Store 上传要求</strong>:<br>
+            • 6.7" iPhone (1290 × 2796): 最少 3 张<br>
+            • 6.5" iPhone (1242 × 2688): 最少 3 张<br>
+            • 5.5" iPhone (1242 × 2208): 可选<br>
+            • <strong>12.9" iPad (2048 × 2732): 最少 3 张</strong> ← 推荐全部 6 张<br>
+            • 11" iPad (1668 × 2388): 可选<br><br>
+            <strong>💡 简化方案</strong>: 只上传 12.9" iPad 的 6 张 + 6.5" iPhone 的 3 张 (首页 1 + 模式 3 + 修仙 6), 其他尺寸可选。
+        </div>
+
+        <div class="note" style="background: rgba(245, 158, 11, 0.08); border-left-color: var(--accent);">
+            <strong>⚠️ 设计注意</strong>:<br>
+            • <strong>不要</strong> 包含其他 App Logo 或品牌 (Apple 拒审)<br>
+            • <strong>不要</strong> 用 mockup / 设备边框 (用真机截图或纯背景图)<br>
+            • <strong>不要</strong> 截图内出现 "Beta" / "Test" 字样<br>
+            • <strong>不要</strong> 截图分辨率 < 必要分辨率 (iPad 12.9" 至少 2048 × 2732)
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnglishSpellPad App Store 截图 — 双向映射</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <div class="screenshot bg-gradient-purple">
+        <div class="status-bar dark">
+            <span class="status-time">9:41</span>
+            <div class="status-icons">
+                <span>📶</span>
+                <span>🔋</span>
+            </div>
+        </div>
+
+        <div class="content" style="color: white;">
+            <div class="section-title" style="color: white;">🧩 双向映射游戏</div>
+            <div class="section-subtitle" style="color: rgba(255,255,255,0.85);">英文 ⇄ 中文 配对, 加强双向记忆</div>
+
+            <!-- 顶部 HUD -->
+            <div style="display: flex; gap: 24px; margin-bottom: 48px;">
+                <div class="feature-card" style="flex: 1; padding: 24px; background: rgba(255,255,255,0.95);">
+                    <div style="font-size: 48px; font-weight: 800; color: var(--success);">6/8</div>
+                    <div style="font-size: 24px; color: var(--text-secondary);">已配对</div>
+                </div>
+                <div class="feature-card" style="flex: 1; padding: 24px; background: rgba(255,255,255,0.95);">
+                    <div style="font-size: 48px; font-weight: 800; color: var(--text);">9</div>
+                    <div style="font-size: 24px; color: var(--text-secondary);">步数</div>
+                </div>
+                <div class="feature-card" style="flex: 1; padding: 24px; background: rgba(255,255,255,0.95);">
+                    <div style="font-size: 48px; font-weight: 800; color: var(--text);">0:42</div>
+                    <div style="font-size: 24px; color: var(--text-secondary);">用时</div>
+                </div>
+            </div>
+
+            <!-- 状态条 -->
+            <div style="background: rgba(255,255,255,0.2); backdrop-filter: blur(20px); padding: 32px 48px; border-radius: 24px; margin-bottom: 32px; display: flex; align-items: center; gap: 16px; border: 2px solid rgba(255,255,255,0.3);">
+                <div style="font-size: 64px;">🔵</div>
+                <div style="font-size: 44px; font-weight: 700;">请选 1 张英文卡 (蓝色)</div>
+            </div>
+
+            <!-- 卡片 4x4 mock -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; flex: 1;">
+                <!-- 第 1 行 -->
+                <div style="aspect-ratio: 1; background: #2563eb; border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 64px; color: white; font-weight: 800; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">CAT</div>
+                <div style="aspect-ratio: 1; background: #f59e0b; border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 64px; color: white; font-weight: 800; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">猫</div>
+                <div style="aspect-ratio: 1; background: #2563eb; border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 64px; color: white; font-weight: 800; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">DOG</div>
+                <div style="aspect-ratio: 1; background: rgba(255,255,255,0.15); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 80px; color: white;">❓</div>
+                <!-- 第 2 行 -->
+                <div style="aspect-ratio: 1; background: #f59e0b; border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 64px; color: white; font-weight: 800; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">狗</div>
+                <div style="aspect-ratio: 1; background: rgba(16, 185, 129, 0.4); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 64px; color: white; font-weight: 800; border: 4px solid #10b981; opacity: 0.7;">✓</div>
+                <div style="aspect-ratio: 1; background: rgba(255,255,255,0.15); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 80px; color: white;">❓</div>
+                <div style="aspect-ratio: 1; background: rgba(255,255,255,0.15); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 80px; color: white;">❓</div>
+            </div>
+        </div>
+
+        <div class="home-indicator dark"></div>
+    </div>
+</body>
+</html>
